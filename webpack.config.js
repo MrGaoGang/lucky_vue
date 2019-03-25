@@ -19,7 +19,11 @@ var config = {
                 use: ExtractTextPlugin.extract({
                     use: "css-loader",
                     fallback: 'style-loader'
-                })
+                }),
+                include: [
+                    /src/,
+                    '/node_modules/iview/dist/styles/iview.css'
+                ]
             }, {
                 test: /\.vue$/,
                 use: [{
@@ -46,20 +50,36 @@ var config = {
                 test: /\.js$/,
                 loader: "babel-loader",
                 exclude: /node_modules/,
-               // include: [path.resolve(__dirname, "src"), path.resolve(__dirname, "node_modules/iview/src")]
+                //include: [path.resolve(__dirname, "src"), path.resolve(__dirname, "node_modules/iview/src")]
             },
             {
                 test: /iview\/.*?js$/,
                 loader: 'babel-loader'
             },
-
+            {
+                test: /\.less/,
+                use: ExtractTextPlugin.extract({
+                    use: ['css-loader', 'less-loader'],
+                    fallback: 'style-loader'
+                })
+            },
+            {
+                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+                loader: 'url-loader?limit=1024'
+            },
         ]
     },
     plugins: [
         //将css文件合并为main.css
         new ExtractTextPlugin("main.css"),
         new VueLoaderPlugin()
-    ]
+    ],
+    resolve: {
+        extensions: ['.js', '.vue'],
+        alias: {
+            'vue': 'vue/dist/vue.esm.js'
+        }
+    }
 
 }
 
