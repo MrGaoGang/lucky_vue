@@ -1,25 +1,30 @@
 <template>
-  <div>
-    <div class="home">{{message}}</div>
-    <Input v-model="message" placeholder="please input data"/>
+  <div class="main">
+    <h1>购物车案例</h1>
+    <Tabs>
+      <TabPane label="商品列表">
+        <ProductList/>
+      </TabPane>
+
+      <TabPane label="购物车">
+        <ShoppingCart/>
+      </TabPane>
+    </Tabs>
   </div>
 </template>
 
 <script>
-import { Input } from "iview";
-
+import ProductList from "./components/ProductList.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
+import { Tabs, TabPane } from "iview";
 export default {
-  data() {
-    return {
-      message: "你好世界！"
-    };
-  },
-  components: {Input}
+  components: { ProductList, ShoppingCart, Tabs, TabPane }
 };
 </script>
 
+
 <style scoped>
-.home {
-  color: red;
+.main {
+  margin: 20px;
 }
 </style>

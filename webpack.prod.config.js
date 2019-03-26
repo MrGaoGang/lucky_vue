@@ -7,7 +7,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var merge = require("webpack-merge");
 var VueLoaderPlugin = require("vue-loader/lib/plugin");
 //基础配置
-var webpackBaseConfig = require("./webpack.config.js");
+var webpackBaseConfig = require("./webpack.base.config.js");
 //清空构建目录
 var clearWebpack = require("clean-webpack-plugin");
 

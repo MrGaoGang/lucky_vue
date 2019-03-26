@@ -2,7 +2,7 @@ var path = require("path");
 
 //导出插件
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var VueLoaderPlugin = require("vue-loader/lib/plugin");
+
 module.exports = {
   entry: {
     //为了兼容ie加入入口文件babel-polyfill
@@ -82,9 +82,8 @@ module.exports = {
     ]
   },
   plugins: [
-    //将css文件合并为main.css
-    new ExtractTextPlugin("main.css"),
-    new VueLoaderPlugin()
+  
+   
   ],
   resolve: {
     extensions: [".js", ".vue"],
