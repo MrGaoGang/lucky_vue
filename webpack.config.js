@@ -19,11 +19,7 @@ var config = {
                 use: ExtractTextPlugin.extract({
                     use: "css-loader",
                     fallback: 'style-loader'
-                }),
-                include: [
-                    /src/,
-                    '/node_modules/iview/dist/styles/iview.css'
-                ]
+                })
             }, {
                 test: /\.vue$/,
                 use: [{
