@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/MrGaoGang/lucky_vue#readme",
   "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "babel": "^6.23.0",
