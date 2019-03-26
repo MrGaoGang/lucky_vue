@@ -122,7 +122,7 @@ export default {
       message: "你好世界！"
     };
   },
-  components: { Input, Pagenation }
+  components: { Input, Pagenation }//注意哦，这里不是components:[]
 };
 </script>
 
