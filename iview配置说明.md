@@ -69,6 +69,7 @@ webpack的module中新增如下配置：
 
 二、引入css样式
 > 首先在main.js使用 import "babel-polyfill"; 兼容ie浏览器
+
 > 在main.js引入 import 'iview/dist/styles/iview.css';
 
 
