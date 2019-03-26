@@ -5,7 +5,7 @@
 
 
 ### 10. 依赖说明：
- "babel-plugin-import": "^1.11.0",//iview或者其他库的按需引入
+> "babel-plugin-import": "^1.11.0",//iview或者其他库的按需引入
     "@babel/core": "^7.3.4",//babel核心库，将es6/es7转化成es2015
     "@babel/preset-env": "^7.3.4",
     "babel": "^6.23.0",
