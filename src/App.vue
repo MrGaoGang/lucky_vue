@@ -14,7 +14,7 @@ export default {
       message: "你好世界！"
     };
   },
-  components: [Input]
+  components: {Input}
 };
 </script>
 
