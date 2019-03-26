@@ -67,9 +67,72 @@ webpack的module中新增如下配置：
 
 ```
 
-二、引入css样式
+### 三、引入css样式
 > 首先在main.js使用 import "babel-polyfill"; 兼容ie浏览器
 
 > 在main.js引入 import 'iview/dist/styles/iview.css';
+
+### 四、按需引入
+
+```js
+//在.babelrc/babel.config.js中添加如下代码：
+module.exports={
+    presets:[
+        [
+            "@babel/preset-env",
+            {
+                targets:{
+                    "browsers":["last 3 versions","ie>=9"]
+                },
+                useBuiltIns:"entry",
+                debug:false
+            }
+        ]
+    ],
+    plugins: [
+        [
+          "import",
+          {
+            "libraryName": "iview",
+            "libraryDirectory": "src/components"
+          }
+        ]
+      ]
+}
+
+```
+> **注意如果使用了按需加载则不需要像其他帖子说的那样，使用Vue.use(iView)全局引入了。**
+
+```
+//再需要的地方这样使用就行了:
+<template>
+  <div>
+    <div class="home">{{message}}</div>
+    <Input v-model="message" placeholder="please input data"/>
+    <Pagenation></Pagenation>
+  </div>
+</template>
+
+<script>
+import { Input } from "iview";
+import Pagenation from "./components/Pagenaton.vue";
+export default {
+  data() {
+    return {
+      message: "你好世界！"
+    };
+  },
+  components: { Input, Pagenation }
+};
+</script>
+
+<style scoped>
+.home {
+  color: red;
+}
+</style>
+
+
+```
 
 
