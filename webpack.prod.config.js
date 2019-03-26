@@ -1,5 +1,5 @@
 var webpack = require("webpack");
-//生成一个Html
+//打包时会自动生成index.html并替换已有的index.html，bundle.js也会自行添加到 html 中
 var HtmlwebpackPlugin = require("html-webpack-plugin");
 //将css合并为一个css文件
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
