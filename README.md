@@ -1,4 +1,4 @@
-## 使用Vue3.0+Webpack4.0+iView3.0构建简单的项目
+## 使用Vue3.0+Webpack4.0+iView3.0+Router构建简单的项目
 
 
 项目地址:https://github.com/MrGaoGang/lucky_vue
