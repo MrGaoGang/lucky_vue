@@ -4,12 +4,16 @@ import App from "./App.vue";
 import "babel-polyfill";
 import store from "./store"
 import "./plugins/iview.js";
+import router from "./router/index";
 
-import { currency } from './currency'
-Vue.filter('currency', currency)
+import {
+    currency
+} from './currency'
+Vue.filter('currency', currency);
 
 new Vue({
     el: "#app",
     store,
+    router,
     render: h => h(App)
-})
+});

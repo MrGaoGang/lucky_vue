@@ -15,8 +15,7 @@ module.exports = {
     filename: "main.js" //输出文件
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           use: "css-loader",
@@ -25,8 +24,7 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        use: [
-          {
+        use: [{
             loader: "vue-loader",
             options: {
               loaders: {
@@ -56,12 +54,10 @@ module.exports = {
         loader: "babel-loader"
       },
       {
-        test: /iview.src.*?js$/,//为了兼容ie
-        use: [
-          {
-            loader: "babel-loader"
-          }
-        ]
+        test: /iview.src.*?js$/, //为了兼容ie
+        use: [{
+          loader: "babel-loader"
+        }]
       },
       {
         test: /\.less/,
@@ -81,14 +77,13 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-  
-   
-  ],
+  plugins: [],
   resolve: {
-    extensions: [".js", ".vue"],
+    extensions: [".js", ".vue",".json"],
+    //设置别名
     alias: {
-      vue: "vue/dist/vue.esm.js"
+      vue: "vue/dist/vue.esm.js",
+      "@": path.resolve("src")
     }
   }
 };

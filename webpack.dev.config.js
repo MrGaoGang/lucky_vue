@@ -8,6 +8,9 @@ module.exports = merge(baseConfig, {
     plugins: [
         new VueLoaderPlugin(),
         //将css文件合并为main.css
-        new ExtractTextPlugin("main.css"),
+        new ExtractTextPlugin({
+            filename: "main.css",
+            allChunks: true
+        }),
     ]
 })

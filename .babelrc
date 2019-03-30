@@ -12,6 +12,8 @@
     ]
   ],
   "plugins": [
+    //解决动态引入模块
+    "@babel/plugin-syntax-dynamic-import",
     [
       "import",
       {

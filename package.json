@@ -18,20 +18,23 @@
   },
   "homepage": "https://github.com/MrGaoGang/lucky_vue#readme",
   "devDependencies": {
-    "babel-plugin-import": "^1.11.0",
     "@babel/core": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.4",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "clean-webpack-plugin": "^2.0.1",
+    "cryptiles": ">=4.1.2",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
+    "hoek": ">=4.2.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "iview-loader": "^1.2.2",
@@ -47,13 +50,12 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.2.1",
-    "cryptiles": ">=4.1.2",
-    "hoek": ">=4.2.1"
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "iview": "3.3.3",
     "vue": "^2.6.10",
+    "vue-router": "^3.0.2",
     "vuex": "^3.1.0"
   }
 }

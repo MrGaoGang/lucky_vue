@@ -1,24 +1,12 @@
 <template>
   <div class="main">
-    <h1>购物车案例</h1>
-    <Tabs>
-      <TabPane label="商品列表">
-        <ProductList/>
-      </TabPane>
-
-      <TabPane label="购物车">
-        <ShoppingCart/>
-      </TabPane>
-    </Tabs>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import ProductList from "./components/ProductList.vue";
-import ShoppingCart from "./components/ShoppingCart.vue";
-import { Tabs, TabPane } from "iview";
 export default {
-  components: { ProductList, ShoppingCart, Tabs, TabPane }
+  components: {}
 };
 </script>
 
