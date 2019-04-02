@@ -3,7 +3,7 @@ export default (modules, handler) => {
   let result = {}
   modules.keys().forEach(fileName => {
     const oneModule = modules(fileName);
-    const moduleName = fileName;
+    const moduleName = fileName
     // 移除开始的 './'
       .replace(/^\.\//, '')
     // 移除文件扩展
