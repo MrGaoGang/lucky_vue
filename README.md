@@ -1,6 +1,6 @@
 ## 使用Vue3.0+Webpack4.0+iView3.0+Router构建简单的项目
 
-![图片](https://github.com/MrGaoGang/lucky_vue/blob/master/images/main.png?raw=true)
+<img src="https://github.com/MrGaoGang/lucky_vue/blob/master/images/main.png?raw=true" width=250 height=400 />
 
 此脚手架配套vscode插件: [查看插件](https://github.com/MrGaoGang/lucky_npm)
 
