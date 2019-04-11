@@ -1,4 +1,4 @@
-## 使用Vue3.0+Webpack4.0+iView3.0+Router构建简单的项目
+## 使用Vue3.0+Webpack4.0+iView3.0+Vuex+Router构建简单的项目
 
 <img src="https://github.com/MrGaoGang/lucky_vue/blob/master/images/main.png?raw=true" width=250 height=400 />
 
