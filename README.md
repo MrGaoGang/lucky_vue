@@ -3,6 +3,8 @@
 
 ### 如何使用此模板？
 
+[模板地址star](https://github.com/MrGaoGang/lucky_vue_template)
+
 ``` bash
 $ npm install -g vue-cli
 $ vue init mrgaogang/lucky_vue_template my-project
