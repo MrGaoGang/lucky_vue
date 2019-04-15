@@ -1,9 +1,21 @@
 ## 使用Vue3.0+Webpack4.0+iView3.0+Vuex+Router构建简单的项目
 
-<img src="https://github.com/MrGaoGang/lucky_vue/blob/master/images/main.png?raw=true" width=250 height=400 />
 
+### 如何使用此模板？
+
+``` bash
+$ npm install -g vue-cli
+$ vue init mrgaogang/lucky_vue_template my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+```
 此脚手架配套vscode插件: [查看插件](https://github.com/MrGaoGang/lucky_npm)
 
+
+### 效果图
+
+<img src="https://github.com/MrGaoGang/lucky_vue/blob/master/images/main.png?raw=true" width=250 height=400 />
 
 项目地址:https://github.com/MrGaoGang/lucky_vue
 
@@ -16,7 +28,7 @@
 
 
 
-
+### 项目配置过程
 
 > 1. npm init初始化npm的配置
 > 2. npm install webpack --save-dev和npm install webpack-cli --save-dev
