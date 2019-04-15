@@ -1,7 +1,7 @@
 {
-  "name": "lucky_vue",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{ description }}",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.config.js",
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/MrGaoGang/lucky_vue.git"
   },
-  "author": "mrgaogang",
-  "license": "ISC",
+  "author": "{{ author }}",
+  "license": "{{ license }}",
   "bugs": {
     "url": "https://github.com/MrGaoGang/lucky_vue/issues"
   },
