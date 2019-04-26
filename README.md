@@ -1,4 +1,4 @@
-## 使用Vue3.0+Webpack4.0+iView3.0+Vuex+Router构建简单的项目
+## 使用Vue+Webpack4.0+iView3.0+Vuex+Router构建简单的项目
 
 
 ### 如何使用此模板？
