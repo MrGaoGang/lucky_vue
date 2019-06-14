@@ -1,5 +1,6 @@
 ## 使用Vue+Webpack4.0+iView3.0+Vuex+Router构建简单的项目
 
+> 更多配置请见 [模板地址](https://github.com/MrGaoGang/lucky_vue_template)
 
 ### 如何使用此模板？
 
